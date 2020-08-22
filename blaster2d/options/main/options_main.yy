@@ -7,7 +7,7 @@
   "option_steam_app_id": "0",
   "option_sci_usesci": true,
   "option_author": "Adam Arbour",
-  "option_lastchanged": "21 August 2020 23:58:32",
+  "option_lastchanged": "22 August 2020 0:00:34",
   "option_spine_licence": false,
   "resourceVersion": "1.2",
   "name": "Main",
