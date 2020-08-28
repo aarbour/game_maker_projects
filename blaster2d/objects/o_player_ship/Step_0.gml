@@ -20,3 +20,9 @@ if (_thrust) {
 } else {
 	friction = friction_amount;
 }
+
+// Laser function
+var _fire_laser = keyboard_check_pressed(vk_space);
+if (_fire_laser) {
+	fire_lasers();
+}
