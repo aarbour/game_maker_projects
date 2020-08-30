@@ -5,3 +5,4 @@ image_yscale = scale;
 repeat (16) {
 	instance_create_layer(x + random_range(-8, 8), y + random_range(-8, 8), "Effects", o_explosion_chunk);
 }
+instance_create_layer(0, 0, "Instances", o_screenshake);

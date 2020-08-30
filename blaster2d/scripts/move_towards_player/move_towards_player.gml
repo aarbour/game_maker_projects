@@ -3,6 +3,8 @@
 function move_towards_player(){
 	var _player_ship = instance_find(o_player_ship, 0);
 	if (_player_ship == noone) {
+		image_angle = direction;
+		speed = max_speed;
 		exit;
 	}
 
