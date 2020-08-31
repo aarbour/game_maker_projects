@@ -2,7 +2,7 @@
 var _mouse_direction = point_direction(x, y, mouse_x, mouse_y);
 image_angle = _mouse_direction;
 
-var _thrust = mouse_check_button(mb_left);
+var _thrust = keyboard_check(ord("W"));
 image_index = _thrust;
 
 // Check if the right mouse button is pushed
