@@ -2,7 +2,7 @@
 var _mouse_direction = point_direction(x, y, mouse_x, mouse_y);
 image_angle = _mouse_direction;
 
-var _thrust = keyboard_check(ord("W"));
+var _thrust = mouse_check_button(mb_right);
 image_index = _thrust;
 
 // Check if the right mouse button is pushed
@@ -20,11 +20,15 @@ if (_thrust) {
 		instance_create_layer(_x, _y, "Effects", o_explosion_particle);
 	}
 } else {
-	friction = friction_amount;
+	if (speed < 1) {
+		speed = 1;
+	} else {
+		friction = friction_amount;
+	}
 }
 
 // Laser function
-var _fire_laser = keyboard_check_pressed(vk_space);
+var _fire_laser = mouse_check_button_pressed(mb_left);
 if (_fire_laser) {
 	fire_lasers();
 }
